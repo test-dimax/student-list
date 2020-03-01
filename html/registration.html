@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Регистрация студентов</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <a class="list_link" href="index.html">Список абитуриентов</a>
+    <h1>Регистрация абитуриентов</h1>
+    <div class="reg_form">
+        <form action="/action_page.php">
+            <div class="row">
+                <div class="col-25">
+                <label for="fname">Имя</label>
+                </div>
+                <div class="col-75">
+                <input type="text" id="fname" name="firstname" placeholder="Ваше имя" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                <label for="lname">Фамилия</label>
+                </div>
+                <div class="col-75">
+                <input type="text" id="lname" name="lastname" placeholder="Ваша фамилия" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                <label for="gender">Пол</label>
+                </div>
+                <div class="col-75">
+                    <input type="radio" name="gender" value="male" checked> Male<br>
+                    <input type="radio" name="gender" value="female"> Female
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                <label for="lname">Номер группы</label>
+                </div>
+                <div class="col-75">
+                <input type="text" id="lname" name="lastname" placeholder="Ваша группа" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                <label for="email">E-mail</label>
+                </div>
+                <div class="col-75">
+                <input type="email" id="email" name="email" placeholder="Ваш e-mail" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                <label for="subject">Баллов ЕГЭ</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="lname" name="lastname" placeholder="Ваше количество баллов ЕГЭ" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                <label for="date_year">Дата рождения</label>
+                </div>
+                <div class="col-75">
+                <input type="date" id="date_year" name="date_year" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                <label for="location">Местный/иногородний</label>
+                </div>
+                <div class="col-75">
+                    <input type="radio" name="location" value="local" checked> Местный<br>
+                    <input type="radio" name="location" value="nolocal"> Иногородний
+                </div>
+            </div>
+            <div class="row">
+                <input type="submit" value="Зарегистрироваться">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

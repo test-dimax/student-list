@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+body {
+    background: #F0F0F0;
+    position: relative;
+}
+.reg_link,
+.list_link {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    text-decoration: none;
+    font-size: 18px;
+    color: rgba(241, 39, 32, 0.7);
+    padding: 10px;
+}
+.reg_link:hover,
+.list_link:hover {
+    color: rgb( 241, 40, 32);
+    background: rgba(255, 185, 183, 0.342);
+   }
+.center {
+    text-align: center;
+}
+.pagination {
+    display: inline-block;
+}
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+    margin: 0 4px;
+    background: #fff;
+}
+.pagination a.active {
+    background-color: rgb( 241, 40, 32 );
+    color: white;
+    border: 1px solid rgb( 241, 40, 32 );
+}
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+}
+h1 {
+    text-align: center;
+    margin: 20px 0;
+}
+.search_panel {
+    border-radius: 5px;
+    background: rgb( 255, 255, 255 );
+    height: 30px;
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+    margin: 0 auto 20px auto;
+    justify-content: flex-start;
+}
+.search_panel img {
+    width: 21px;
+    height: 21px;
+    margin: 0 14px 0 10px;
+}
+.search_panel button {
+    border: 1px solid rgb( 241, 40, 32 );
+    border-radius: 5px;
+    width: 100px;
+    height: 100%;
+    align-self: flex-end;
+    background: transparent;
+    font-size: 14px;
+    color: rgb( 242, 44, 38 );
+    margin-left: auto;
+    cursor: pointer;
+}
+.search_panel button:hover {
+    background: rgba(253, 189, 188, 0.1);
+    color: rgb(255, 8, 0);
+}
+.search_panel .search {
+    border: none;
+    width: 100%;
+}
+.student_list {
+    background: #fff;
+    padding: 20px 50px;
+    margin: 20px 50px;
+}
+.student_list table {
+    width: 1000px;
+    border: 1px solid;
+    margin: auto;
+}
+.student_list tr td{
+    width: 25%;
+    padding: 5px;
+    border: 1px solid #000;
+}
+.student_list tr:first-child td{
+    background: rgba(255, 8, 0, 0.1);
+    border-right: 1px solid #000;
+}
+
+/* .reg_form {
+    width: 900px;
+    margin: auto;
+    background: #fff;
+    padding: 50px;
+    border-radius: 10px;
+    background: rgba(255, 185, 183, 0.342);
+} */
+
+.reg_form input[type=text],
+.reg_form input[type=number],
+.reg_form input[type=email] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+.reg_form input.error {
+    border-color: red;
+}
+
+.reg_form span.error {
+    color: red;
+}
+  
+.reg_form  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+  
+.reg_form input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+  
+.reg_form input[type=submit]:hover {
+    background-color: #45a049;
+}
+  
+.reg_form {
+    border-radius: 5px;
+    background: rgba(255, 185, 183, 0.342);
+    padding: 20px;
+    width: 900px;
+    margin: auto;
+}
+.reg_form .row:last-child {
+    margin-top: 6px;
+}
+  
+.reg_form .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+  
+.reg_form .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+  
+  /* Clear floats after the columns */
+.reg_form .row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .reg_form .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
